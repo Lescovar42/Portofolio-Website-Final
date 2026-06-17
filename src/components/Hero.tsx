@@ -237,7 +237,7 @@ function TesseractSVG() {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 md:pt-20 md:pb-0 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 md:pt-20 md:pb-0">
       {/* Background abstract element */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] h-[120vw] max-w-[800px] max-h-[800px] bg-primary/20 rounded-full blur-[80px] md:blur-[120px] pointer-events-none opacity-50 animate-breathe" />
 
