@@ -15,18 +15,18 @@ export default function Hero() {
           key={i}
           className={`absolute w-1.5 h-1.5 rounded-full blur-[1px] ${i % 2 === 0 ? 'bg-primary' : 'bg-accent'}`}
           initial={{
-            x: Math.random() * 100 + "vw",
-            y: Math.random() * 100 + "vh",
-            opacity: Math.random() * 0.6 + 0.2,
-            scale: Math.random() * 2,
+            x: ((i * 17) % 100) + "vw",
+            y: ((i * 23) % 100) + "vh",
+            opacity: ((i * 3) % 6) * 0.1 + 0.2,
+            scale: ((i * 7) % 20) * 0.1,
           }}
           animate={{
-            y: [null, Math.random() * -300 - 100],
-            x: [null, (Math.random() - 0.5) * 200],
+            y: [null, -(((i * 13) % 300) + 100)],
+            x: [null, (((i * 11) % 200) - 100)],
             opacity: [null, 0],
           }}
           transition={{
-            duration: Math.random() * 5 + 5,
+            duration: ((i * 5) % 5) + 5,
             repeat: Infinity,
             ease: "linear",
           }}
