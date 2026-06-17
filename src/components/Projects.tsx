@@ -76,6 +76,8 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0], index: n
     y.set(0);
   };
 
+  const isLastOdd = index === projects.length - 1 && projects.length % 2 !== 0;
+
   return (
     <motion.div
       ref={ref}
@@ -90,7 +92,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0], index: n
         rotateY,
         transformStyle: "preserve-3d",
       }}
-      className="group relative h-full perspective-[1000px]"
+      className={`group relative h-full perspective-[1000px] ${isLastOdd ? 'md:col-span-2 md:w-[calc(50%-1rem)] md:mx-auto' : ''}`}
     >
       <div 
         className="glass-card h-full p-8 flex flex-col absolute inset-0 group-hover:border-primary/50 group-hover:shadow-[0_0_30px_rgba(0,242,254,0.4)] transition-colors duration-500"
@@ -110,9 +112,11 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0], index: n
         </div>
 
         <div className="flex gap-4 mt-auto">
-          <a href={project.github} className="text-gray-400 hover:text-white transition-colors">
-            <GithubIcon />
-          </a>
+          {project.github !== "#" && (
+            <a href={project.github} className="text-gray-400 hover:text-white transition-colors">
+              <GithubIcon />
+            </a>
+          )}
           <a href={project.link} className="text-gray-400 hover:text-primary transition-colors">
             <ExternalLink size={20} />
           </a>
