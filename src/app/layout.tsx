@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Antigravity Portfolio",
-  description: "A highly impressive developer portfolio designed with an Antigravity aesthetic.",
+  title: "Farhan - Crafting a Digital Reality",
+  description: "Portfolio of Muhammad Farhan Abdul Azis, Informatics Student specializing in AI, Computer Vision, Robotics, and Web Development.",
 };
 
 export default function RootLayout({
