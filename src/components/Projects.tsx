@@ -42,7 +42,7 @@ const projects = [
     description: "An IEEE-compliant analytical study comparing Divide & Conquer, Backtracking, and Prim's algorithms for procedural maze generation. Evaluated time complexity and structural metrics.",
     tags: ["Python", "Data Analysis", "Matplotlib"],
     link: "/maze-research",
-    github: "#",
+    github: "https://github.com/Lescovar42/ASA",
   },
 ];
 
