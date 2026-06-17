@@ -36,11 +36,11 @@ export default function HumanoidRobot() {
           </p>
 
           <div className="mt-12 mb-6">
-            <div className="relative w-full h-[400px] sm:h-[500px] rounded-xl overflow-hidden glass-card p-2">
+            <div className="relative w-full h-[400px] sm:h-[500px] rounded-xl overflow-hidden glass-card p-2 bg-black/40">
               <img 
                 src="/images/humanoid.jpg" 
                 alt="Left: the physical ROBOTIS OP3 build in the team workshop. Right: Webots simulation used for vision and motion testing"
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-contain rounded-lg"
               />
             </div>
             <p className="text-gray-400 italic mt-4 text-center text-sm">
