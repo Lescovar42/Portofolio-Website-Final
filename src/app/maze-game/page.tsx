@@ -33,7 +33,18 @@ export default function MazeGame() {
           <p className="text-gray-300 leading-relaxed mb-6">
             This was my first time implementing a graph search algorithm (BFS) for something other than a textbook exercise, and seeing it directly translate into &quot;the ghost actually hunts you now&quot; was a turning point in how I think about algorithms — they&apos;re not abstract, they&apos;re behavior. I also learned a lot about low-level memory management and game loop timing in C, which doesn&apos;t forgive sloppy structure the way higher-level languages do.
           </p>
-          <p className="text-gray-400 italic mb-6">In-game footage: first-person maze corridors with item HUD, ghost distance readout, and stamina bar (bottom left)</p>
+          <div className="mt-12 mb-6">
+            <div className="relative w-full h-[400px] sm:h-[500px] rounded-xl overflow-hidden glass-card p-2 bg-black/40">
+              <img 
+                src="/images/maze-runner.png" 
+                alt="In-game footage: first-person maze corridors with item HUD, ghost distance readout, and stamina bar (bottom left)"
+                className="w-full h-full object-contain rounded-lg"
+              />
+            </div>
+            <p className="text-gray-400 italic mt-4 text-center text-sm">
+              In-game footage: first-person maze corridors with item HUD, ghost distance readout, and stamina bar (bottom left)
+            </p>
+          </div>
         </div>
       </div>
     </main>

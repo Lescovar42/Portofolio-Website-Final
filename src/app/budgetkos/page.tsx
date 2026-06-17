@@ -28,7 +28,18 @@ export default function BudgetKos() {
           <p className="text-gray-300 leading-relaxed mb-6">
             Good QA is invisible when it works, and obvious when it doesn&apos;t — my job was making sure users never hit a broken input flow or a miscategorized transaction. That mattered even more for BudAI specifically, since its whole value is in correcting users when their assumptions don&apos;t match reality (e.g. catching it when someone thinks they have far more money left than they actually do) — if that grounding broke, the feature would be actively misleading instead of helpful.
           </p>
-          <p className="text-gray-400 italic mb-6">Home dashboard (left) and Bud-AI correcting a balance assumption (right)</p>
+          <div className="mt-12 mb-6">
+            <div className="relative w-full h-[400px] sm:h-[500px] rounded-xl overflow-hidden glass-card p-2 bg-black/40">
+              <img 
+                src="/images/budgetkos.jpg" 
+                alt="Home dashboard (left) and Bud-AI correcting a balance assumption (right)"
+                className="w-full h-full object-contain rounded-lg"
+              />
+            </div>
+            <p className="text-gray-400 italic mt-4 text-center text-sm">
+              Home dashboard (left) and Bud-AI correcting a balance assumption (right)
+            </p>
+          </div>
 
           <h2 className="text-2xl font-semibold text-accent mt-12 mb-4">WHAT I LEARNED</h2>
           <p className="text-gray-300 leading-relaxed mb-6">

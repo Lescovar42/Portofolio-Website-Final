@@ -28,7 +28,18 @@ export default function RiceDisease() {
           <p className="text-gray-300 leading-relaxed mb-6">
             Rice disease detection has real agricultural relevance in Indonesia, where early detection can directly affect crop yield and a farmer's livelihood. The model was able to classify test images with high confidence (one test image was correctly identified as LeafBlast at 100% confidence), and building and presenting this at the Intel Global Impact Festival meant putting the model in front of an audience evaluating it not just as a coding exercise, but as a potential real-world tool.
           </p>
-          <p className="text-gray-400 italic mb-6">Training/validation curves and a sample prediction (LeafBlast, 100% confidence)</p>
+          <div className="mt-12 mb-6">
+            <div className="relative w-full h-[400px] sm:h-[500px] rounded-xl overflow-hidden glass-card p-2 bg-black/40">
+              <img 
+                src="/images/rice-disease.png" 
+                alt="Training/validation curves and a sample prediction (LeafBlast, 100% confidence)"
+                className="w-full h-full object-contain rounded-lg"
+              />
+            </div>
+            <p className="text-gray-400 italic mt-4 text-center text-sm">
+              Training/validation curves and a sample prediction (LeafBlast, 100% confidence)
+            </p>
+          </div>
 
           <h2 className="text-2xl font-semibold text-accent mt-12 mb-4">WHAT I LEARNED</h2>
           <p className="text-gray-300 leading-relaxed mb-6">
