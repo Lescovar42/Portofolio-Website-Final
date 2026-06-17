@@ -30,6 +30,13 @@ const projects = [
     link: "#",
     github: "#",
   },
+  {
+    title: "Procedural Maze Algorithms",
+    description: "An IEEE-compliant analytical study comparing Divide & Conquer, Backtracking, and Prim's algorithms for procedural maze generation. Evaluated time complexity and structural metrics.",
+    tags: ["Python", "Data Analysis", "Matplotlib"],
+    link: "#",
+    github: "#",
+  },
 ];
 
 const ProjectCard = ({ project, index }: { project: typeof projects[0], index: number }) => {
@@ -125,7 +132,7 @@ export default function Projects() {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 h-auto lg:h-[400px]">
+        <div className="grid md:grid-cols-2 gap-8 h-auto">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} index={index} />
           ))}
