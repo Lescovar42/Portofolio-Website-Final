@@ -22,9 +22,9 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 1 }}
           >
-            Crafting <br />
+            Muhammad Farhan <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
-              Digital Reality
+              Abdul Azis
             </span>
           </motion.h1>
           <motion.p 
@@ -33,7 +33,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 1 }}
           >
-            Expert UI/UX Designer & Full-Stack Developer specializing in Next.js, building immersive and performant web experiences.
+            Informatics Student at Universitas Diponegoro specializing in AI, Computer Vision, Robotics, and Web Development. Building intelligent systems and immersive experiences.
           </motion.p>
           
           <motion.a

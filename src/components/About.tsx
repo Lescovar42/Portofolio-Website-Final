@@ -5,14 +5,14 @@ import { Code2, Layout, Database, Terminal, Cpu, Globe, Smartphone, Zap } from "
 
 export default function About() {
   const skills = [
-    { name: "React / Next.js", icon: <Globe size={24} />, delay: 0 },
-    { name: "Tailwind CSS", icon: <Layout size={24} />, delay: 0.2 },
-    { name: "TypeScript", icon: <Code2 size={24} />, delay: 0.4 },
-    { name: "Node.js", icon: <Terminal size={24} />, delay: 0.1 },
-    { name: "Database", icon: <Database size={24} />, delay: 0.5 },
-    { name: "API Design", icon: <Zap size={24} />, delay: 0.3 },
-    { name: "Mobile Responsive", icon: <Smartphone size={24} />, delay: 0.6 },
-    { name: "System Architecture", icon: <Cpu size={24} />, delay: 0.7 },
+    { name: "Python & C/C++", icon: <Terminal size={24} />, delay: 0 },
+    { name: "Machine Learning", icon: <Cpu size={24} />, delay: 0.2 },
+    { name: "Computer Vision", icon: <Layout size={24} />, delay: 0.4 },
+    { name: "IoT & Robotics", icon: <Zap size={24} />, delay: 0.1 },
+    { name: "Cloud (AWS)", icon: <Globe size={24} />, delay: 0.5 },
+    { name: "React / Next.js", icon: <Code2 size={24} />, delay: 0.3 },
+    { name: "SQL & Databases", icon: <Database size={24} />, delay: 0.6 },
+    { name: "Web Development", icon: <Smartphone size={24} />, delay: 0.7 },
   ];
 
   return (
@@ -43,7 +43,7 @@ export default function About() {
             >
               <h3 className="text-2xl font-semibold mb-4 text-primary">The Journey</h3>
               <p className="text-gray-300 leading-relaxed">
-                I am a passionate developer who blends design and engineering. My focus is on creating web applications that not only function flawlessly but also provide a stunning, memorable user experience.
+                As an Informatics student at Universitas Diponegoro, I blend software engineering with hands-on hardware development. From being a Teaching Assistant for Fundamental Programming to mentoring students across Indonesia as a Cloud Computing Master Trainer, I love sharing knowledge and building impactful solutions.
               </p>
             </motion.div>
 
@@ -56,7 +56,7 @@ export default function About() {
             >
               <h3 className="text-2xl font-semibold mb-4 text-accent">The Vision</h3>
               <p className="text-gray-300 leading-relaxed">
-                I believe in the "Antigravity" aesthetic—interfaces that feel light, responsive, and alive. By leveraging modern tools like Next.js and Framer Motion, I push the boundaries of what's possible on the web.
+                I am deeply passionate about Artificial Intelligence and Robotics. Whether I am competing with the RoboCup Humanoid Soccer Team or building Computer Vision models for disease detection, I strive to create systems that are intelligent, efficient, and bridge the physical and digital worlds.
               </p>
             </motion.div>
           </div>

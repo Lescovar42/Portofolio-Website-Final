@@ -10,23 +10,23 @@ const GithubIcon = () => (
 
 const projects = [
   {
-    title: "Project Alpha",
-    description: "A revolutionary AI-driven analytics dashboard built with Next.js and Tailwind CSS.",
-    tags: ["React", "Next.js", "Tailwind", "Framer Motion"],
+    title: "AI Rice Plant Disease Detection",
+    description: "A computer vision model capable of identifying diseases in rice plant images using convolutional neural networks. Showcased at the Intel Global Impact Festival.",
+    tags: ["Python", "TensorFlow", "OpenCV"],
     link: "#",
     github: "#",
   },
   {
-    title: "Nebula E-Commerce",
-    description: "High-performance headless e-commerce storefront with immersive 3D product viewing.",
-    tags: ["TypeScript", "Three.js", "Zustand"],
+    title: "Humanoid Soccer Robot",
+    description: "Developed motion programming, computer vision, and control systems for a humanoid competition soccer robot with the RoboCup team.",
+    tags: ["ROS 2", "Webots", "C++", "OpenCV"],
     link: "#",
     github: "#",
   },
   {
-    title: "Quantum Social",
-    description: "Real-time social platform featuring end-to-end encrypted messaging and dynamic content feeds.",
-    tags: ["Node.js", "Socket.io", "PostgreSQL", "Redis"],
+    title: "BudgetKos Finance Tracker",
+    description: "A cross-platform expense tracking app designed for university students to log and automatically organize financial records without manual bookkeeping.",
+    tags: ["Dart", "Go", "HTML"],
     link: "#",
     github: "#",
   },
