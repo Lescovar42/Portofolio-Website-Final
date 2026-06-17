@@ -31,10 +31,17 @@ const projects = [
     github: "#",
   },
   {
+    title: "MazeRunner Game",
+    description: "A 3D glut-based maze navigation game in C featuring procedurally generated mazes, player movement, and collision detection, built from scratch with pure C.",
+    tags: ["C", "OpenGL", "Game Dev"],
+    link: "#",
+    github: "#",
+  },
+  {
     title: "Procedural Maze Algorithms",
     description: "An IEEE-compliant analytical study comparing Divide & Conquer, Backtracking, and Prim's algorithms for procedural maze generation. Evaluated time complexity and structural metrics.",
     tags: ["Python", "Data Analysis", "Matplotlib"],
-    link: "#",
+    link: "/maze-research",
     github: "#",
   },
 ];
