@@ -87,37 +87,61 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* 3D-like Abstract Geometric Shape */}
+        {/* 3D Tesseract Geometric Shape */}
         <motion.div
-          className="relative flex justify-center items-center h-[400px] lg:h-[600px] group perspective-[1200px]"
+          className="relative flex justify-center items-center h-[400px] lg:h-[600px] perspective-[1200px]"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
           <motion.div
             animate={{ 
-              rotateX: [0, 30, -30, 0],
-              rotateY: [0, 180, 360],
-              rotateZ: [0, 45, 0],
-              y: [-20, 20, -20]
+              rotateX: [0, 360],
+              rotateY: [0, 360],
+              rotateZ: [0, 360],
             }}
             transition={{ 
-              duration: 15,
+              duration: 20,
               repeat: Infinity,
               ease: "linear"
             }}
-            className="relative w-72 h-72 md:w-96 md:h-96"
+            className="relative w-48 h-48 md:w-64 md:h-64 preserve-3d"
             style={{ transformStyle: "preserve-3d" }}
           >
-            {/* Multiple rings and shapes to create a complex floating orb */}
-            <div className="absolute inset-0 border-[3px] border-primary/50 rounded-2xl shadow-[0_0_50px_rgba(0,242,254,0.3)] backdrop-blur-md group-hover:border-primary group-hover:shadow-[0_0_80px_rgba(0,242,254,0.6)] transition-all duration-500" />
-            <div className="absolute inset-4 border-2 border-accent/60 rounded-full rotate-45 shadow-[inset_0_0_30px_rgba(138,43,226,0.3)]" style={{ transform: "translateZ(30px)" }} />
-            <div className="absolute inset-8 border border-secondary/40 -rotate-45 rounded-xl" style={{ transform: "translateZ(-30px)" }} />
-            <div className="absolute inset-12 border border-white/20 rounded-full animate-ping opacity-20" />
-            <div className="absolute inset-1/4 bg-gradient-to-tr from-primary to-accent rounded-full blur-[40px] animate-pulse-glow group-hover:blur-[60px] transition-all duration-500" />
+            {/* Outer Cube */}
+            <div className="absolute inset-0 preserve-3d border-primary text-primary shadow-[0_0_50px_rgba(0,242,254,0.3)]">
+              <div className="absolute inset-0 border-2 border-current bg-primary/5" style={{ transform: "translateZ(128px)" }} />
+              <div className="absolute inset-0 border-2 border-current bg-primary/5" style={{ transform: "translateZ(-128px)" }} />
+              <div className="absolute inset-0 border-2 border-current bg-primary/5" style={{ transform: "rotateY(-90deg) translateZ(128px)" }} />
+              <div className="absolute inset-0 border-2 border-current bg-primary/5" style={{ transform: "rotateY(90deg) translateZ(128px)" }} />
+              <div className="absolute inset-0 border-2 border-current bg-primary/5" style={{ transform: "rotateX(90deg) translateZ(128px)" }} />
+              <div className="absolute inset-0 border-2 border-current bg-primary/5" style={{ transform: "rotateX(-90deg) translateZ(128px)" }} />
+            </div>
+
+            {/* Inner Cube (Tesseract core) */}
+            <motion.div 
+              animate={{ 
+                rotateX: [0, -720],
+                rotateY: [0, -720],
+              }}
+              transition={{ 
+                duration: 20,
+                repeat: Infinity,
+                ease: "linear"
+              }}
+              className="absolute top-1/4 left-1/4 w-1/2 h-1/2 preserve-3d border-accent text-accent"
+              style={{ transformStyle: "preserve-3d" }}
+            >
+              <div className="absolute inset-0 border-[3px] border-current bg-accent/10 shadow-[inset_0_0_20px_rgba(155,81,224,0.5)]" style={{ transform: "translateZ(64px)" }} />
+              <div className="absolute inset-0 border-[3px] border-current bg-accent/10 shadow-[inset_0_0_20px_rgba(155,81,224,0.5)]" style={{ transform: "translateZ(-64px)" }} />
+              <div className="absolute inset-0 border-[3px] border-current bg-accent/10 shadow-[inset_0_0_20px_rgba(155,81,224,0.5)]" style={{ transform: "rotateY(-90deg) translateZ(64px)" }} />
+              <div className="absolute inset-0 border-[3px] border-current bg-accent/10 shadow-[inset_0_0_20px_rgba(155,81,224,0.5)]" style={{ transform: "rotateY(90deg) translateZ(64px)" }} />
+              <div className="absolute inset-0 border-[3px] border-current bg-accent/10 shadow-[inset_0_0_20px_rgba(155,81,224,0.5)]" style={{ transform: "rotateX(90deg) translateZ(64px)" }} />
+              <div className="absolute inset-0 border-[3px] border-current bg-accent/10 shadow-[inset_0_0_20px_rgba(155,81,224,0.5)]" style={{ transform: "rotateX(-90deg) translateZ(64px)" }} />
+            </motion.div>
             
-            {/* Inner core */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white rounded-full blur-md animate-breathe mix-blend-overlay" />
+            {/* Inner Glowing Core */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full blur-[20px] animate-pulse-glow mix-blend-overlay" />
           </motion.div>
         </motion.div>
       </div>
